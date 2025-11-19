@@ -1,0 +1,385 @@
+/* ============================
+   PALETA DE COLOR CORPORATIVA
+=============================== */
+
+:root {
+    --primary: #00ff7f;
+    --primary-dark: #00cc66;
+    --bg-dark: #111111;
+    --bg-mid: #1c1c1c;
+    --text-light: #ffffff;
+    --text-muted: #b9b9b9;
+    --card-dark: #0f0f0f;
+
+    /* Sombras premium */
+    --shadow-soft: 0px 10px 25px rgba(0, 0, 0, 0.25);
+    --shadow-hover: 0px 15px 35px rgba(0, 0, 0, 0.4);
+
+    /* Transiciones */
+    --transition-fast: 0.25s ease;
+    --transition-medium: 0.4s ease;
+}
+
+/* ============================
+   TIPOGRAFÍA GLOBAL
+=============================== */
+
+body {
+    background-color: #202020;
+    margin: 0;
+    padding: 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* NAVBAR */
+.navbar {
+    font-family:sans-serif;
+    font-size: 2rem;
+    width: 100%;
+    background-color: #212529;   /* color igual que la imagen */
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* LOGO + TEXTO */
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 40px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-logo span {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+/* LINKS */
+.nav-links {
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    gap: 20px; /* separación igual que la captura */
+    margin: 0;
+    padding-right: 8cm;
+}
+
+.nav-links li a {
+    color: #8a9397;
+    text-decoration: none;
+    font-size: 15px;
+    transition: 0.2s;
+}
+
+.nav-links li a:hover {
+    color: white;
+}
+
+.container-fluid{
+    background-color: #202020;
+    ;
+}
+.container-fluid h1{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 3rem;
+    color: #ffffff;
+}
+
+.container-fluid h2{
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 2rem;
+}
+
+
+/* ============================
+   HERO
+=============================== */
+
+/* Tamaños del título */
+.hero-title {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+}
+
+/* Subtítulo */
+.hero-subtitle {
+    font-family: 'Arial Black', sans-serif;
+    font-size: 24px;
+}
+
+.imagen {
+    width: 100%;            /* Que ocupe todo el ancho disponible */
+    max-width: 550px;       /* Tamaño máximo recomendado */
+    border-radius: 30px;    /* Bordes redondeados */
+    object-fit: cover;      /* Ajuste visual */
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+}
+
+
+
+/* From Uiverse.io by vikiWayne */ 
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #04c655;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #04c655;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #04c655;
+  box-shadow: 4px 5px 17px -4px #04c655;
+}
+
+button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #04c655;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+
+
+/* ============================
+   SECCIONES GENERALES
+=============================== */
+
+.section-title {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+}
+
+.section-title::after {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 4px;
+    background: var(--primary);
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 4px;
+}
+
+/* ============================
+   TARJETAS (SERVICIOS)
+=============================== */
+
+/* Fondo general */
+.servicios-section {
+    background-color: #1d1d1d;
+}
+
+/* Título */
+.titulo-servicios {
+    font-size: 48px;
+    font-weight: 900;
+    color: white;
+    font-family: 'Arial Black', sans-serif;
+    letter-spacing: 2px;
+}
+
+/* Tarjetas */
+.card-servicio {
+    border-radius: 20px !important;
+    overflow: hidden;
+    border-width: 4px !important;
+    box-shadow: 0 0 25px rgba(0,0,0,0.7);
+}
+
+.card-servicio img {
+    border-bottom: none;
+}
+
+/* -------------------------------
+   TARJETA 1
+--------------------------------*/
+.servicio-1 {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.servicio-1 img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.servicio-1:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+
+/* -------------------------------
+   TARJETA 2
+--------------------------------*/
+.servicio-2 {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.servicio-2 img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.servicio-2:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+
+/* -------------------------------
+   TARJETA 3
+--------------------------------*/
+.servicio-3 {
+    border: none;
+    border-radius: 20px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.10);
+    transition: 0.3s ease;
+}
+
+.servicio-3 img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+}
+
+.servicio-3:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+
+/* Footer de las tarjetas */
+.texto-footer {
+    font-size: 22px;
+    font-weight: 900;
+    text-align: center;
+    padding: 20px 10px;
+    font-family: 'Arial Black', sans-serif;
+}
+
+
+/* ============================
+   SECCIÓN: EXPERIENCIA & VALORES
+=============================== */
+
+.values-list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.values-list li::before {
+    content: "✔";
+    color: var(--primary);
+    font-size: 1.3rem;
+}
+
+/* ============================
+   PARALLAX / SCROLL EFFECTS
+=============================== */
+
+.parallax-fade {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.parallax-visible {
+    opacity: 1;
+    transform: translateY(0px);
+}
+
+/* ============================
+   WHATSAPP BUTTON
+=============================== */
+
+.whatsapp-btn {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background: #25d366;
+    border-radius: 50%;
+    padding: 18px;
+    box-shadow: var(--shadow-hover);
+    transition: var(--transition-medium);
+}
+
+.whatsapp-btn:hover {
+    transform: scale(1.15);
+    box-shadow: 0 0 20px #25d366;
+}
+
+/* ============================
+   SMOOTH SCROLL
+=============================== */
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* ============================
+   ANIMACIONES PERSONALIZADAS
+=============================== */
+
+@keyframes float-soft {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-6px); }
+    100% { transform: translateY(0px); }
+}
+
+.float-soft {
+    animation: float-soft 6s infinite ease-in-out;
+}
+
+/* Efecto Glow */
+.glow {
+    box-shadow: 0 0 15px var(--primary);
+}
